@@ -12,8 +12,8 @@ try2 = input("Would you like to try a calculation? Y/N ").upper()
 
 while try2 == "Y":
     num1 = float(input("Please input number 1: "))
-    num2 = float(input("Please input number 2: "))
     operator = input("Please input an operator: ")
+    num2 = float(input("Please input number 2: "))
 
     if operator == "+":
         print("The result is: " + str(round(num1 + num2, 2)))
@@ -22,7 +22,10 @@ while try2 == "Y":
     elif operator == "*":
         print("The result is: " + str(round(num1 * num2, 2)))
     elif operator == "/":
-        print("The result is: " + str(round(num1 / num2, 2)))
+        if num2 == 0:
+            print("Sorry, you cannot divide by 0.")
+        else:
+            print("The result is: " + str(round(num1 / num2, 2)))
     else:
         print("Sorry, you must input one of the following operators: +, -, *, / ")
     try2 = input("Would you like to try another calculation? Y/N ").upper()
