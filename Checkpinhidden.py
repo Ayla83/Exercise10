@@ -4,8 +4,6 @@ import getpass
 # Take input from the keyboard until it is identical to a password number which is hardcoded by this program
 # Hides what characters user types
 
-# Can't get this to work in pycharm
-
 PIN = 1234
 
 maxtry = 3

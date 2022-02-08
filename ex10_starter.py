@@ -31,9 +31,8 @@ for filename in listfilename:
 print("The files of non-zero length are: ")
 for filename in listfilename:
     sizefilename = os.path.getsize(filename)
-    if sizefilename == 0:
-        pass
-    else: print(filename)
+    if sizefilename > 0:
+        print(filename)
 
 # TODO: Remove the leading directory name(s) from each filename before you print it - 
 # using os.path.basename()
