@@ -4,12 +4,13 @@ import getpass
 # Take input from the keyboard until it is identical to a password number which is hardcoded by this program
 # Hides what characters user types
 
+# Needed to edit configurations: 'Emulate terminal in putput console' in order for getpass to run successfully
+# in pycharm
+
 PIN = 1234
 
 maxtry = 3
 attempt = 1
-
-
 
 while attempt < maxtry:
     supplied = getpass.getpass(prompt="Enter your PIN: ")

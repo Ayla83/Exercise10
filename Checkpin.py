@@ -2,8 +2,6 @@
 # Program to check a PIN
 # Take input from the keyboard until it is identical to a password number which is hardcoded by this program
 
-# Issues: What if someone types non-integer characters?  Or, just presses enter without typing a value?
-
 PIN = 1234
 
 maxtry = 3

@@ -1,5 +1,5 @@
 
-# creating a calculator: ask the user for two numbers and an operator
+# Creating a calculator: ask the user for two numbers and an operator
 # and based on their choice perform the correct operation.
 # Display the result to the user and ask them if they wish to continue.
 
@@ -7,8 +7,6 @@
 # display result and do this on repeat
 # until they do not wish to participate any more
 # (maybe they press a special character -i.e. 'x'- to exit)
-
-
 
 try2 = input("Would you like to try a calculation? Y/N ").upper()
 
